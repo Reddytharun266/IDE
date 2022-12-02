@@ -1,0 +1,28 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="IDE.css">
+		<script type="text/javascript" src="IDE.js"></script>
+	</head>
+	<body>
+	<center>
+	<h1>Drag and Drop elements</h1>
+	<div id = "div" style=""><h2>Wedgets</h2></div>
+	<div id = "div" style=""><h2>Design</h2></div>
+	<br>
+	<div id="div1">
+		<input id = "textbox" type= "text" placeholder = "textbox" class = "drag" draggable="true" ondragstart="drag(event)"><br><br>
+		<input id = "button" type= "button" value = "Button" class = "drag" draggable="true" ondragstart="drag(event)">
+	</div>
+	<div id="div2" ondrop="drop(event) " ondragover="allow_drop(event)"></div>
+	<div id="div3" ondrop="drop(event)"></div>
+	<br>
+	<div style="width: 1400px;">
+		<input style="background: blue; color: white; padding: 2px 10px; border-radius: 6px" type = button id = "save" value = "download" onclick = "save();">
+	</div>
+
+	</center>
+	</body>
+</html>
